@@ -66,7 +66,7 @@ export default function Connexion() {
         return;
       }
 
-      router.push("/dashboard");
+      router.replace("/dashboard");
     } catch (error) {
       console.log("Error: ", error);
     }

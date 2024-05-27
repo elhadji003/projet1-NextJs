@@ -108,7 +108,7 @@ const Inscription = () => {
         setMessage("Registration successful!");
         setTimeout(resetMessage, 5000);
 
-        router.push("/dashboard")
+        router.push("/")
 
       } else {
         console.log("User registration failed.");
