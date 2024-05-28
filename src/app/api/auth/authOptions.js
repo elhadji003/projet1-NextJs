@@ -38,11 +38,12 @@ export const authOptions = {
   ],
   session: {
     strategy: "jwt"
-  },  
+  },
   secret: process.env.NEXTAUTH_SECRET,
   pages: {
-    signIn: "/auth/connexion",
-    signOut: "/"
+    signIn: "/auth/connexion", // URL correcte pour la page de connexion
+    signOut: "/",
+    error: "/auth/error", // Page pour afficher les erreurs, facultatif
   },
 };
 
